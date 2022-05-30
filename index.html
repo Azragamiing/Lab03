@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="funtion.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+  <div class="container">
+   <div class="row">
+
+
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+
+
+
+    <!-- FORM  -->	    
+    <div class="col-md-12">
+
+     <form class="form-horizontal" id="form-edit-client">
+      <fieldset>
+
+        <!-- Form Name -->
+        <legend>Registrar Datos</legend>
+
+        <!-- Text input-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="codigo">Codigo</label>  
+          <div class="col-md-4">
+            <input id="codigo" name="codigo" type="number" placeholder="Por favor ingrese el dato" class="form-control input-md">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="name">Nombre</label>  
+          <div class="col-md-4">
+            <input id="name" name="name" type="text" placeholder="Por favor ingrese el dato" class="form-control input-md">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="descripcion">Descripcion</label>  
+          <div class="col-md-4">
+            <input id="descripcion" name="descripcion" type="text" placeholder="Por favor ingrese el dato" class="form-control input-md">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="fechaDeInicio">Fecha de inicio</label>  
+          <div class="col-md-4">
+            <input id="fechaDeInicio" name="fechaDeInicio" type="date" placeholder="Por favor ingrese el dato" class="form-control input-md">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="tipo">Fecha de inicio</label>  
+          <div class="col-md-4">
+            <select name="tipo" id="tipo">
+              <option >Seleccionar</option>
+              <option value="Investigación">Investigación</option>
+              <option value="Extensión">Extensión</option>
+            </select>
+          </div>
+        </div>
+
+
+      </fieldset>
+    </form>
+    <div class="form-group">
+          <label class="col-md-4 control-label" for="btn-save"></label>
+          <div class="col-md-4" id="saveupdate">
+            <button id="btn-save" name="btn-save" class="btn btn-success" onclick="addClient()">Guardar</button>
+          </div>
+        </div>
+
+  </div> 
+
+  <div class=col-md-12>
+
+       <legend>Lista de datos</legend>
+
+     
+      <table class="table table-bordered table-condensed table-hover">
+        <thead>
+          <tr>
+            <td>Codigo</td>
+            <th>Nombre</th>
+            <th>Descripcion</th>
+            <th>Fecha de inicio</th>
+            <th>Tipo</th>
+            <th>Accion</th>
+          </tr>
+
+        </thead>
+        <tbody id="form-list-client-body">
+
+        </tbody>
+      </table>
+  </div>
+  <br> 
+</div>
+</div>
+</body>
+</html>
